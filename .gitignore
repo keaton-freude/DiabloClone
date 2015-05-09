@@ -41,6 +41,7 @@ local.properties
 .externalToolBuilders/
 *.launch
 
+*.iws
 .idea/
 *.iml
 
