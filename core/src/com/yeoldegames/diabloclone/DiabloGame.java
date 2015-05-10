@@ -32,7 +32,7 @@ public class DiabloGame extends ApplicationAdapter {
 	@Override
 	public void create() {
 		batch = new SpriteBatch();
-		walkSheet = new Texture("Paladin_Town_Walk.png");
+		walkSheet = new Texture("Paladin_Neutral.png");
 		TextureRegion [][] tmp = TextureRegion.split(walkSheet, walkSheet.getWidth() / FRAME_COLS, walkSheet.getHeight()/FRAME_ROWS);
 		walkFrames = new TextureRegion[FRAME_COLS * FRAME_ROWS];
 		int index = 0;
@@ -43,7 +43,7 @@ public class DiabloGame extends ApplicationAdapter {
 				walkFrames[index++] = tmp[i][j];
 			}
 		}
-		walkAnimation = new Animation(.02f, walkFrames);
+		walkAnimation = new Animation(.10f, walkFrames);
 		stateTime = 0f;
 
 	}
